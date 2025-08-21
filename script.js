@@ -1,7 +1,8 @@
 // Domain check function
 function checkDomain() {
-    const currentDomain = window.location.hostname;
-    const isBlinkDomain = currentDomain.endsWith('.joinblink.com') || currentDomain === 'joinblink.com';
+    const currentReferrer = document.referrer;
+    const referrerDomain = new URL(currentReferrer).hostname;
+    const isBlinkDomain === 'joinblink.com'; || endsWith('.joinblink.com');
     
     if (!isBlinkDomain) {
         // Show domain check overlay
