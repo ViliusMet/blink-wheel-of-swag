@@ -10,7 +10,7 @@ function isEmbeddedFromDomain(allowedDomain) {
                 const parentDomain = new URL(referrer).hostname;
                 return parentDomain === allowedDomain || parentDomain.endsWith('.' + allowedDomain);
             } catch (e) {
-                return false;
+                return true;
             }
         }
         return true;
