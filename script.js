@@ -3,7 +3,6 @@ function checkDomain() {
     const currentDomain = window.location.hostname;
     const isBlinkDomain = currentDomain.endsWith('.joinblink.com') || currentDomain === 'joinblink.com';
     
-    return true;
     if (!isBlinkDomain) {
         // Show domain check overlay
         document.getElementById('domain-check-overlay').style.display = 'flex';
