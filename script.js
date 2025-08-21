@@ -1,19 +1,31 @@
+function isEmbeddedFromDomain(allowedDomain) {
+    // Check if we're in an iframe or webview
+    if (window.self !== window.top) {
+        // Check the domain that embedded us
+        const referrer = document.referrer;
+        if (referrer) {
+            try {
+                const parentDomain = new URL(referrer).hostname;
+                return parentDomain === allowedDomain || parentDomain.endsWith('.' + allowedDomain);
+            } catch (e) {
+                return false;
+            }
+        }
+        return false;
+    }
+    return false;
+}
+
 // Domain check function
 function checkDomain() {
-    const currentReferrer = document.referrer;
-    const referrerDomain = new URL(currentReferrer).hostname;
-    const isBlinkDomain === 'joinblink.com' || endsWith('.joinblink.com');
-    
-    if (!isBlinkDomain) {
-        // Show domain check overlay
-        document.getElementById('domain-check-overlay').style.display = 'flex';
-        document.getElementById('main-content').style.display = 'none';
-        return false;
-    } else {
-        // Show main content
+    if (isEmbeddedFromDomain('joinblink.com')) {
         document.getElementById('domain-check-overlay').style.display = 'none';
         document.getElementById('main-content').style.display = 'block';
         return true;
+    } else{
+            document.getElementById('domain-check-overlay').style.display = 'flex';
+            document.getElementById('main-content').style.display = 'none';
+            return false;
     }
 }
 
