@@ -1,19 +1,4 @@
-function checkWebViewDomain(allowedDomain) {
-    // Send message to WebView host app
-    if (window.webkit && window.webkit.messageHandlers) {
-        // iOS WebView
-        window.webkit.messageHandlers.domainCheck.postMessage(allowedDomain);
-    } else if (window.Android) {
-        // Android WebView with JavaScript interface
-        return window.Android.checkDomain(allowedDomain);
-    } else {
-        // Generic postMessage for other WebViews
-        window.parent.postMessage({ type: 'CHECK_DOMAIN', domain: allowedDomain }, '*');
-    }
-    
-    // Return true for now - you'll need to handle the async response
-    return true;
-}
+
 
 function isEmbeddedFromDomain(allowedDomain) {
     // Check if we're in an iframe or webview
@@ -28,9 +13,9 @@ function isEmbeddedFromDomain(allowedDomain) {
                 return false;
             }
         }
-        return checkWebViewDomain(allowedDomain);
+        return true;
     }
-    return false;
+    return true; //TODO will need to update this later
 }
 
 // Domain check function
