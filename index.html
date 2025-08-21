@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel of Fortune</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</head>
+<body>
+    
+    <!-- Domain Check Overlay -->
+    <div id="domain-check-overlay" class="domain-check-overlay" style="display: none;">
+        <div class="domain-check-content">
+            <h2>🔒 Access Restricted</h2>
+            <p>Login to your Blink account to win swag!</p>
+            <p class="domain-note">This wheel of fortune is only available to Blink users.</p>
+        </div>
+    </div>
+
+    <div class="container" id="main-content">
+        
+        <canvas id="confetti"></canvas>
+        
+        <h1 class="title">Wheel of SWAG</h1>
+        
+        <div class="wheel-container">
+            <canvas id="wheel" width="320" height="320"></canvas>
+            <div class="wheel-center">
+                <div class="spin-button">SPIN!</div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <p>Tap or click the wheel to spin and win SWAG!</p>
+        </div>
+    </div>
+    
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2 id="popup-title">Congratulations!</h2>
+            
+            <p id="popup-message">You won a prize!</p>
+            <button id="close-popup" class="close-button">Close</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html> 
