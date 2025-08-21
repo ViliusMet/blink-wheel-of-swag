@@ -130,7 +130,7 @@ class WheelOfFortune {
             this.ctx.font = `bold ${fontSize}px Arial`;
             
 
-            this.ctx.fillText(`${index}. ${section.name}`, 0, 0);
+            this.ctx.fillText(`${section.name}`, 0, 0);
             console.log(`console section.name: ${section.name} and text color: ${section.textColor}`);
 
             
