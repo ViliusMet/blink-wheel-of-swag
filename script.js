@@ -35,28 +35,28 @@ function checkDomain() {
 const wheelConfig = {
     sections: [
         // 8 sections for Stickers
-        { name: "Sticker", color: "#03390f", textColor: "#cfff71" },
-        { name: "Notebook", color: "#cfff71", textColor: "#03390f" },
-        { name: "Sticker", color: "#03390f", textColor: "#cfff71" },
-        { name: "Blinkie", color: "#cfff71", textColor: "#03390f" },
-        { name: "Sticker", color: "#03390f", textColor: "#cfff71" },
-        { name: "Notebook", color: "#cfff71", textColor: "#03390f" },
-        { name: "Sticker", color: "#03390f", textColor: "#cfff71" },
-        { name: "Notebook", color: "#cfff71", textColor: "#03390f" },
+        { name: "Tote bag", color: "#03390f", textColor: "#cfff71" },
+        { name: "Chocolate", color: "#cfff71", textColor: "#03390f" },
+        { name: "Tote bag", color: "#03390f", textColor: "#cfff71" },
+        { name: "Chocolate", color: "#cfff71", textColor: "#03390f" },
+        { name: "Tote bag", color: "#03390f", textColor: "#cfff71" },
+        { name: "Chocolate", color: "#cfff71", textColor: "#03390f" },
+        { name: "Tote bag", color: "#03390f", textColor: "#cfff71" },
+        { name: "Chocolate", color: "#cfff71", textColor: "#03390f" },
         
         // 6 sections for Notebook
-        { name: "Sticker", color: "#03390f", textColor: "#cfff71" },
-        { name: "Blinkie", color: "#cfff71", textColor: "#03390f" },
-        { name: "Notebook", color: "#03390f", textColor: "#cfff71" },
-        { name: "Sticker", color: "#cfff71", textColor: "#03390f" },
-        { name: "Notebook", color: "#03390f", textColor: "#cfff71" },
+        { name: "Tote bag", color: "#03390f", textColor: "#cfff71" },
+        { name: "Lego", color: "#cfff71", textColor: "#03390f" },
+        { name: "Chocolate", color: "#03390f", textColor: "#cfff71" },
+        { name: "Tote bag", color: "#cfff71", textColor: "#03390f" },
+        { name: "Chocolate", color: "#03390f", textColor: "#cfff71" },
         { name: "Blinkie", color: "#cfff71", textColor: "#03390f" },
         
         // 4 sections for Plush toy
-        { name: "Notebook", color: "#03390f", textColor: "#cfff71" },
-        { name: "Sticker", color: "#cfff71", textColor: "#03390f" },
-        { name: "Notebook", color: "#03390f", textColor: "#cfff71" },
-        { name: "Blinkie", color: "#cfff71", textColor: "#03390f" }
+        { name: "Chocolate", color: "#03390f", textColor: "#cfff71" },
+        { name: "Tote bag", color: "#cfff71", textColor: "#03390f" },
+        { name: "Chocolate", color: "#03390f", textColor: "#cfff71" },
+        { name: "Water bottle", color: "#cfff71", textColor: "#03390f" }
     ]
 };
 
