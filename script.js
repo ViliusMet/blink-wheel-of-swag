@@ -56,7 +56,7 @@ const wheelConfig = {
         { name: "Chocolate", color: "#03390f", textColor: "#cfff71" },
         { name: "Tote bag", color: "#cfff71", textColor: "#03390f" },
         { name: "Pen", color: "#03390f", textColor: "#cfff71" },
-        { name: "Water bottle", color: "#cfff71", textColor: "#03390f" }
+        { name: "Pen", color: "#cfff71", textColor: "#03390f" }
     ]
 };
 
